@@ -1,7 +1,7 @@
 {
   "name": "rolex",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the default project for working with React/Redux/RTKQ/TypeScript/Webpack",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --env port=3081",
@@ -22,6 +22,7 @@
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
+    "prettier": "2.8.3",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
