@@ -1,5 +1,3 @@
-import { ThemeContext } from './ui/ThemeContext'
-import { ThemeProvider } from './ui/ThemeProvider'
-import { Theme } from './ui/ThemeContext'
-
-export { ThemeProvider, ThemeContext, Theme }
+export { ThemeContext } from './ui/ThemeContext'
+export { ThemeProvider } from './ui/ThemeProvider'
+export { Theme } from './ui/ThemeContext'

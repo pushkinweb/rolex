@@ -1,25 +1,24 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import {AboutPageLazy} from "../pages/About/AboutPageLazy";
-import {MainPageLazy} from "../pages/Main/MainPageLazy";
-import ErrorPage from "../pages/Error/ErrorPage";
-import Layout from "../pages/Layout";
-import React from "react";
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Layout from '../pages/Layout'
+import React from 'react'
+import { AboutPage } from 'pages/AboutPage'
+import { MainPage } from 'pages/MainPage'
+import { ErrorPage } from 'pages/ErrorPage'
 
 export const router = createBrowserRouter([
     {
-        path: "/",
+        path: '/',
         element: <Layout />,
         errorElement: <ErrorPage />,
         children: [
             {
-                path: "",
-                element: <MainPageLazy />,
+                path: '',
+                element: <MainPage />
             },
             {
-                path: "about",
-                element: <AboutPageLazy />,
-            },
+                path: 'about',
+                element: <AboutPage />
+            }
         ]
     }
 ])

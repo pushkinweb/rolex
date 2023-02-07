@@ -1,4 +1,3 @@
-import path from 'path'
 import { buildPlugins } from './buildPlugins'
 import { buildLoaders } from './buildLoaders'
 import { buildResolve } from './buildResolve'

@@ -1,8 +1,6 @@
-import React, { Suspense, useContext, useState } from 'react'
 import './styles/style.scss'
 import { RouterProvider } from 'react-router-dom'
 import { router } from '../Router/Router'
-import { Theme, ThemeContext } from './providers/ThemProvider/ui/ThemeContext'
 import { useTheme } from './providers/ThemProvider/lib/hooks/useTheme'
 import { classNames } from '../helpers/classNames/classNames'
 
@@ -12,7 +10,7 @@ const App = () => {
     return (
         <div className={classNames('app', {}, [theme])}>
             <button onClick={toogleTheme}>Set Theme</button>
-            oofsdof sdfoonds dskfg ondsfg sdfng
+            APP component
             <RouterProvider router={router} /*fallbackElement={<div>Loading...</div>}*/ />
         </div>
     )
