@@ -1,17 +1,16 @@
 import './styles/style.scss'
-import { RouterProvider } from 'react-router-dom'
-import { router } from '../Router/Router'
 import { useTheme } from './providers/ThemProvider/lib/hooks/useTheme'
-import { classNames } from '../helpers/classNames/classNames'
+import { AppRouter } from 'app/providers/RouterProvider'
+import { cn } from 'shared/lib/utils/classNames'
 
 const App = () => {
-    const { theme, toogleTheme } = useTheme()
+    const { theme, toggleTheme } = useTheme()
 
     return (
-        <div className={classNames('app', {}, [theme])}>
-            <button onClick={toogleTheme}>Set Theme</button>
-            APP component
-            <RouterProvider router={router} /*fallbackElement={<div>Loading...</div>}*/ />
+        <div className={cn('app', {}, [theme])}>
+            <button onClick={toggleTheme}>Set Theme</button>
+
+            <AppRouter />
         </div>
     )
 }

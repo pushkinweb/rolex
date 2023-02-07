@@ -1,6 +1,6 @@
-import s from "./Loader.module.scss"
+import s from './Loader.module.scss'
 
-const Loader = () => {
+export const Loader = () => {
     return (
         <div className={s.loader}>
             <div></div>
@@ -14,5 +14,3 @@ const Loader = () => {
         </div>
     )
 }
-
-export default Loader

@@ -1,7 +1,7 @@
 import React from 'react'
-import s from './ErrorPage.module.scss'
+import s from './NotFoundPage.module.scss'
 
-export const ErrorPage = () => {
+export const NotFoundPage = () => {
     return (
         <div className={s.wrap}>
             <h1>404 Ошибка!</h1>

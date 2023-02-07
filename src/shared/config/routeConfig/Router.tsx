@@ -1,15 +1,15 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Layout from '../pages/Layout'
 import React from 'react'
 import { AboutPage } from 'pages/AboutPage'
 import { MainPage } from 'pages/MainPage'
-import { ErrorPage } from 'pages/ErrorPage'
+import { NotFoundPage } from 'pages/NotFoundPage'
+import { Layout } from 'app/layout'
 
 export const router = createBrowserRouter([
     {
         path: '/',
         element: <Layout />,
-        errorElement: <ErrorPage />,
+        errorElement: <NotFoundPage />,
         children: [
             {
                 path: '',
