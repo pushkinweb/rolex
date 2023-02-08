@@ -1,6 +1,12 @@
 .app.light {
   --bg-color: whitesmoke;
+  --inverted-bg-color: #04106d;
 
   --primary-color: #04106d;
   --secondary-color: #061392;
+  --inverted-primary-color: #54cc17;
+  --inverted-secondary-color: #6dff23;
+
+  --disabled-page-color: rgba(255, 255, 255, 0.9);
+  --inverted-disabled-page-color: rgba(0, 0, 0, 0.7);
 }

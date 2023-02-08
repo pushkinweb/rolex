@@ -1,5 +1,5 @@
 :root {
-  --font-family-main: Consolas, "Times New Roman", Serif;
+  --font-family-main: Consolas, 'Times New Roman', Serif;
 
   --font-size-m: 16px;
   --font-line-m: 24px;
@@ -8,4 +8,6 @@
   --font-size-l: 16px;
   --font-line-l: 24px;
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+
+  --height-header: 54px;
 }

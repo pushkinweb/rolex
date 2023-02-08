@@ -1,0 +1,25 @@
+.Header {
+  width: 100%;
+  height: var(--height-header);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--inverted-bg-color);
+  color: var(--inverted-primary-color);
+}
+
+.leftSide,
+.rightSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.leftSide {
+  justify-content: flex-start;
+}
+
+.rightSide {
+  justify-content: flex-end;
+}

@@ -1,14 +1,21 @@
-import React from 'react'
-import { Outlet, Link } from 'react-router-dom'
+import { FC } from 'react'
+import s from './Layout.module.scss'
+import { cn } from 'shared/lib/utils/classNames'
+import { Header } from 'widgets/Header'
+import { Outlet } from 'react-router-dom'
+import { SuspenseProvider } from 'app/providers/SuspenseProvider'
 
-export const Layout = () => {
+interface ILayoutProps {
+    className?: string
+}
+
+export const Layout: FC<ILayoutProps> = ({ className }) => {
     return (
-        <div>
-            <div>
-                <Link to={`/`}>Главная</Link>
-                <Link to={`/about`}>О нас</Link>
-            </div>
-            <Outlet />
+        <div className={cn(s.Layout, [className], {})}>
+            <Header />
+            <SuspenseProvider>
+                <Outlet />
+            </SuspenseProvider>
         </div>
     )
 }

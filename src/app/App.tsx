@@ -4,12 +4,10 @@ import { AppRouter } from 'app/providers/RouterProvider'
 import { cn } from 'shared/lib/utils/classNames'
 
 const App = () => {
-    const { theme, toggleTheme } = useTheme()
+    const { theme } = useTheme()
 
     return (
-        <div className={cn('app', {}, [theme])}>
-            <button onClick={toggleTheme}>Set Theme</button>
-
+        <div className={cn('app', [theme], {})}>
             <AppRouter />
         </div>
     )
