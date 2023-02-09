@@ -9,5 +9,9 @@
   --font-line-l: 24px;
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
+  /*Size*/
   --height-header: 54px;
+
+  --width-sidebar: 300px;
+  --width-sidebar-collapsed: 80px;
 }
