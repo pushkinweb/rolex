@@ -13,6 +13,7 @@
   "author": "Nikolaev Constantin",
   "license": "ISC",
   "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
     "@svgr/webpack": "^6.5.1",
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.27",
@@ -25,6 +26,7 @@
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "prettier": "2.8.3",
+    "react-refresh": "^0.14.0",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
