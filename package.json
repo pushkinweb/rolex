@@ -7,9 +7,16 @@
     "start": "webpack serve --env port=3081",
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
+    "prettier": "npx prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
+    "prettier:fix": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:ts": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:ts:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "prettier --check",
+    "src/**/*.{js,jsx,ts,tsx}": "eslint"
   },
   "keywords": [],
   "author": "Nikolaev Constantin",
@@ -38,6 +45,8 @@
     "eslint-plugin-react": "^7.32.2",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
     "mini-css-extract-plugin": "^2.7.2",
     "prettier": "2.8.3",
     "react-refresh": "^0.14.0",
