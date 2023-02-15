@@ -1,6 +1,7 @@
-import { FC, ReactNode, Suspense } from 'react'
-import { PageDisabled } from 'shared/ui/PageDisabled'
+import { type FC, type ReactNode, Suspense } from 'react'
+
 import { Loader } from 'shared/ui/Loader'
+import { PageDisabled } from 'shared/ui/PageDisabled'
 
 interface ISuspenseLayoutProps {
     children?: ReactNode

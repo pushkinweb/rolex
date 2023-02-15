@@ -1,9 +1,12 @@
 import './styles/style.scss'
-import { useTheme } from './providers/ThemProvider/lib/hooks/useTheme'
+import { type FC } from 'react'
+
 import { AppRouter } from 'app/providers/RouterProvider'
 import { cn } from 'shared/lib/utils/classNames'
 
-const App = () => {
+import { useTheme } from './providers/ThemProvider/lib/hooks/useTheme'
+
+const App: FC = () => {
     const { theme } = useTheme()
 
     return (

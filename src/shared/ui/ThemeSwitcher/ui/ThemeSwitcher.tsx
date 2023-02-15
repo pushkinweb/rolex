@@ -1,10 +1,12 @@
-import { FC } from 'react'
-import s from './ThemeSwitcher.module.scss'
-import { cn } from 'shared/lib/utils/classNames'
+import { type FC } from 'react'
+
 import { Theme, useTheme } from 'app/providers/ThemProvider'
-import { Button, ThemeButton } from 'shared/ui/Button'
 import ButtonThemeDark from 'shared/assets/icons/theme-dark.svg'
 import ButtonThemeLight from 'shared/assets/icons/theme-light.svg'
+import { cn } from 'shared/lib/utils/classNames'
+import { Button, ThemeButton } from 'shared/ui/Button'
+
+import s from './ThemeSwitcher.module.scss'
 
 interface IThemeButtonProps {
     className?: string

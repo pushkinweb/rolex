@@ -1,7 +1,9 @@
-import { FC } from 'react'
-import s from './Header.module.scss'
-import { cn } from 'shared/lib/utils/classNames'
+import { type FC } from 'react'
+
 import { Navbar } from 'features/Navbar'
+import { cn } from 'shared/lib/utils/classNames'
+
+import s from './Header.module.scss'
 
 interface IHeaderProps {
     className?: string

@@ -1,7 +1,8 @@
-import React from 'react'
+import { type FC } from 'react'
+
 import s from './NotFoundPage.module.scss'
 
-export const NotFoundPage = () => {
+export const NotFoundPage: FC = () => {
     return (
         <div className={s.wrap}>
             <h1>404 Ошибка!</h1>

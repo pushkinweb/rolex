@@ -1,4 +1,5 @@
-import React, { FC, ReactNode, useMemo, useState } from 'react'
+import React, { type FC, type ReactNode, useMemo, useState } from 'react'
+
 import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from './ThemeContext'
 
 interface IProps {
@@ -13,8 +14,8 @@ export const ThemeProvider: FC<IProps> = ({ children }) => {
 
     const defaultValue = useMemo(
         () => ({
-            theme: theme,
-            setTheme: setTheme
+            theme,
+            setTheme
         }),
         [theme]
     )

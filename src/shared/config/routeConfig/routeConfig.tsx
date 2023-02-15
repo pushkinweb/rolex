@@ -8,7 +8,7 @@ export const RouterPath: Record<AppRoutes, string> = {
     [AppRoutes.ABOUT]: '/about'
 }
 
-/*export const RouterConfig: Record<AppRoutes, RouteProps> = {
+/* export const RouterConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.MAIN]: {
         path: RouterPath.main,
         element: <MainPage />
@@ -17,4 +17,4 @@ export const RouterPath: Record<AppRoutes, string> = {
         path: RouterPath.about,
         element: <AboutPage />
     }
-}*/
+} */

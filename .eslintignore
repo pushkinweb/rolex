@@ -1,0 +1,7 @@
+/test
+/public
+/build
+/node_modules
+/.idea
+
+/src/app/types/declaration.d.ts

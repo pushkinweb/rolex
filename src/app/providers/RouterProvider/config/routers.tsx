@@ -1,9 +1,10 @@
-import { RouterPath } from 'shared/config/routeConfig/routeConfig'
-import { RouteObject } from 'react-router-dom'
+import { type RouteObject } from 'react-router-dom'
+
 import { Layout } from 'app/layout'
-import { NotFoundPage } from 'pages/NotFoundPage'
-import { MainPage } from 'pages/MainPage'
 import { AboutPage } from 'pages/AboutPage'
+import { MainPage } from 'pages/MainPage'
+import { NotFoundPage } from 'pages/NotFoundPage'
+import { RouterPath } from 'shared/config/routeConfig/routeConfig'
 
 export const Routers: RouteObject[] = [
     {

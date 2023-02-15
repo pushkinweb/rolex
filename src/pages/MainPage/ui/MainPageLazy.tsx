@@ -1,9 +1,10 @@
 import { lazy } from 'react'
 
 export const MainPageLazy = lazy(
-    () =>
-        new Promise((resolve) => {
-            //@ts-ignore
-            setTimeout(() => resolve(import('./MainPage')), 500)
-        })
+    async () =>
+        await new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(import('./MainPage'))
+            }, 500)
+        }).then()
 )

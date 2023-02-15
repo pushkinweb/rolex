@@ -1,10 +1,12 @@
-import { FC, useState } from 'react'
-import s from './Sidebar.module.scss'
+import { type FC, useState } from 'react'
+
+import ArrowLeft from 'shared/assets/icons/arrow_left.svg'
+import ArrowRight from 'shared/assets/icons/arrow_right.svg'
 import { cn } from 'shared/lib/utils/classNames'
 import { Button } from 'shared/ui/Button'
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher'
-import ArrowLeft from 'shared/assets/icons/arrow_left.svg'
-import ArrowRight from 'shared/assets/icons/arrow_right.svg'
+
+import s from './Sidebar.module.scss'
 
 interface ISidebarProps {
     className?: string
@@ -13,7 +15,7 @@ interface ISidebarProps {
 export const Sidebar: FC<ISidebarProps> = ({ className }) => {
     const [collapsed, setCollapsed] = useState(false)
 
-    const toggleCollapsed = () => {
+    const toggleCollapsed = (): void => {
         setCollapsed((pre) => !pre)
     }
 
