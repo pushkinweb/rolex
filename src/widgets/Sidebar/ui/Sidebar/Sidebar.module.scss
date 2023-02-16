@@ -1,9 +1,12 @@
 .Sidebar {
-  background-color: var(--inverted-bg-color);
+  position: relative;
+
   width: var(--width-sidebar);
   height: calc(100vh - var(--height-header));
+
+  background-color: var(--inverted-bg-color);
+
   transition: width 0.25s ease-out;
-  position: relative;
 }
 
 .collapsed {
@@ -11,19 +14,22 @@
 }
 
 .switchers {
+  position: absolute;
+  bottom: 20px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 20px;
+
   width: 100%;
 }
 
 .buttonControlSidebar {
   position: absolute;
-  background-color: transparent;
-  bottom: 10px;
-  right: -10px;
   z-index: 10;
+  right: -10px;
+  bottom: 10px;
+
+  background-color: transparent;
 }

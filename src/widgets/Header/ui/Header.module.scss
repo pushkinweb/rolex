@@ -1,12 +1,15 @@
 .Header {
-  width: 100%;
-  height: var(--height-header);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--inverted-bg-color);
+
+  width: 100%;
+  height: var(--height-header);
+
   color: var(--inverted-primary-color);
+
+  background-color: var(--inverted-bg-color);
 }
 
 .leftSide,
