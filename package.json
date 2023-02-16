@@ -17,8 +17,11 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": ["prettier", "eslint"],
-    "\"**/*.scss\"": "stylelint"
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier",
+      "eslint"
+    ],
+    "src/**/*.scss": "stylelint"
   },
   "keywords": [],
   "author": "Nikolaev Constantin",
