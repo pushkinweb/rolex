@@ -1,12 +1,13 @@
 .app.light {
+  /* colors */
   --bg-color: whitesmoke;
   --inverted-bg-color: #04106d;
-
   --primary-color: #04106d;
   --secondary-color: #061392;
+
+  /* inverted */
   --inverted-primary-color: #54cc17;
   --inverted-secondary-color: #6dff23;
-
-  --disabled-page-color: rgba(255, 255, 255, 0.9);
-  --inverted-disabled-page-color: rgba(0, 0, 0, 0.7);
+  --disabled-page-color: rgb(255 255 255 / 90%);
+  --inverted-disabled-page-color: rgb(0 0 0 / 70%);
 }
