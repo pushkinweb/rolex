@@ -10,7 +10,7 @@ export const RouterPath: Record<AppRoutes, string> = {
 
 /* export const RouterConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.MAIN]: {
-        path: RouterPath.main,
+        path: RouterPath.main.json,
         element: <MainPage />
     },
     [AppRoutes.ABOUT]: {

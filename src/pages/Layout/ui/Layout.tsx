@@ -16,11 +16,13 @@ export const Layout: FC<ILayoutProps> = ({ className }) => {
     return (
         <div className={cn(s.Layout, [className], {})}>
             <Header />
-            <div className={s.ContentPage}>
+            <div className={s.bodyPage}>
                 <Sidebar />
-                <SuspenseProvider>
-                    <Outlet />
-                </SuspenseProvider>
+                <div className={s.contentPage}>
+                    <SuspenseProvider>
+                        <Outlet />
+                    </SuspenseProvider>
+                </div>
             </div>
         </div>
     )

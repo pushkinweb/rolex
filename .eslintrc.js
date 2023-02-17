@@ -13,19 +13,21 @@ module.exports = {
         'plugin:import/errors',
         'plugin:import/warnings',
         'plugin:import/typescript',
-        'plugin:boundaries/recommended'
+        'plugin:boundaries/recommended',
+        'plugin:i18next/recommended'
     ],
-    overrides: [],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
         project: ['./tsconfig.json']
     },
-    plugins: ['react', 'prettier'],
+    plugins: ['react', 'prettier', 'i18next'],
     rules: {
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
+        '@typescript-eslint/no-floating-promises': 'off',
+        'import/no-named-as-default': 'off',
         'prettier/prettier': 'error',
         'import/order': [
             'error',

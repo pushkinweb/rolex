@@ -1,7 +1,7 @@
 import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 
-import { Layout } from 'app/layout'
+import { Layout } from 'pages/Layout'
 import { AboutPage } from 'pages/AboutPage'
 import { MainPage } from 'pages/MainPage'
 import { NotFoundPage } from 'pages/NotFoundPage'

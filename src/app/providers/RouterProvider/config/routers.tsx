@@ -1,7 +1,7 @@
 import { type RouteObject } from 'react-router-dom'
 
-import { Layout } from 'app/layout'
 import { AboutPage } from 'pages/AboutPage'
+import { Layout } from 'pages/Layout'
 import { MainPage } from 'pages/MainPage'
 import { NotFoundPage } from 'pages/NotFoundPage'
 import { RouterPath } from 'shared/config/routeConfig/routeConfig'

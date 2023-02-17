@@ -4,3 +4,4 @@
 /.idea
 
 /src/app/types/declaration.d.ts
+/src/shared/config/**/*
