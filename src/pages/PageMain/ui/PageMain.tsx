@@ -1,9 +1,9 @@
 import { type FC } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import s from './MainPage.module.scss'
+import s from './PageMain.module.scss'
 
-const MainPage: FC = () => {
+const PageMain: FC = () => {
     const { t } = useTranslation('main')
 
     return (
@@ -15,4 +15,4 @@ const MainPage: FC = () => {
     )
 }
 
-export default MainPage
+export default PageMain

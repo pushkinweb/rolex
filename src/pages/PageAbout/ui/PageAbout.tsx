@@ -1,9 +1,9 @@
 import { type FC } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import s from './AboutPage.module.scss'
+import s from './PageAbout.module.scss'
 
-const AboutPage: FC = () => {
+const PageAbout: FC = () => {
     const { t } = useTranslation('about')
 
     return (
@@ -15,4 +15,4 @@ const AboutPage: FC = () => {
     )
 }
 
-export default AboutPage
+export default PageAbout

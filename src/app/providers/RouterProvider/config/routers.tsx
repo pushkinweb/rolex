@@ -1,24 +1,29 @@
+import React from 'react'
 import { type RouteObject } from 'react-router-dom'
 
-import { AboutPage } from 'pages/AboutPage'
 import { Layout } from 'pages/Layout'
-import { MainPage } from 'pages/MainPage'
-import { NotFoundPage } from 'pages/NotFoundPage'
-import { RouterPath } from 'shared/config/routeConfig/routeConfig'
+import { PageAbout } from 'pages/PageAbout'
+import { PageBomb } from 'pages/PageBomb/ui/PageBomb'
+import { PageMain } from 'pages/PageMain'
+import { PageNotFound } from 'pages/PageNotFound'
 
 export const Routers: RouteObject[] = [
     {
         path: '/',
         element: <Layout />,
-        errorElement: <NotFoundPage />,
+        errorElement: <PageNotFound />,
         children: [
             {
-                path: RouterPath.main,
-                element: <MainPage />
+                path: '',
+                element: <PageMain />
             },
             {
-                path: RouterPath.about,
-                element: <AboutPage />
+                path: 'about',
+                element: <PageAbout />
+            },
+            {
+                path: 'bomb',
+                element: <PageBomb />
             }
         ]
     }

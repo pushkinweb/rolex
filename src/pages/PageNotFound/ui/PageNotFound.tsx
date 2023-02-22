@@ -1,9 +1,9 @@
 import { type FC } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import s from './NotFoundPage.module.scss'
+import s from './PageNotFound.module.scss'
 
-export const NotFoundPage: FC = () => {
+export const PageNotFound: FC = () => {
     const { t } = useTranslation('error')
 
     return (
