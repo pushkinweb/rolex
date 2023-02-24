@@ -8,7 +8,6 @@ module.exports = {
         'plugin:react/recommended',
         'standard-with-typescript',
         'eslint:recommended',
-        'plugin:react/recommended',
         'prettier',
         // FSD
         'plugin:import/errors',
