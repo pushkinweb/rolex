@@ -1,4 +1,4 @@
-import { cn } from './index'
+import { cn } from 'shared/lib/utils/classNames/index'
 
 describe('classNames', () => {
     test('Test main class', () => {
