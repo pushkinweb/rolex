@@ -18,20 +18,14 @@ export const LangSwitcher: FC<ILangSwitcherProps> = ({ className }) => {
     const { i18n } = useTranslation()
 
     const toggle = (): void => {
-        i18n.changeLanguage(
-            i18n.language === LangEnums.RU ? LangEnums.EN : LangEnums.RU
-        )
+        i18n.changeLanguage(i18n.language === LangEnums.RU ? LangEnums.EN : LangEnums.RU)
     }
 
     return (
         <div>
             <Button onClick={toggle} theme={ThemeButton.CLEAR}>
-                {i18n.language === LangEnums.RU && (
-                    <LngEn width={48} height={48} />
-                )}
-                {i18n.language === LangEnums.EN && (
-                    <LngRu width={48} height={48} />
-                )}
+                {i18n.language === LangEnums.RU && <LngEn width={48} height={48} />}
+                {i18n.language === LangEnums.EN && <LngRu width={48} height={48} />}
             </Button>
         </div>
     )

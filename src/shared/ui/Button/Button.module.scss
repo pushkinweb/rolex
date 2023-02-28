@@ -1,6 +1,14 @@
 .Button {
   cursor: pointer;
+
   display: flex;
+
+  padding: 4px 8px;
+
+  color: var(--primary-color);
+
+  border-radius: 4px;
+  outline: none;
 }
 
 .clear {
@@ -11,5 +19,12 @@
 
   background-color: transparent;
   border: none;
+  outline: none;
+}
+
+.outline {
+  color: var(--primary-color);
+  background: none;
+  border: 1px solid var(--primary-color);
   outline: none;
 }

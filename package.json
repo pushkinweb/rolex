@@ -14,7 +14,9 @@
     "lint:scss": "stylelint 'src/**/*.scss'",
     "lint:scss:fix": "stylelint --fix 'src/**/*.scss'",
     "test": "jest --config ./config/jest/jest.config.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006 -c ./config/storybook",
+    "build-storybook": "build-storybook -c ./config/storybook"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
@@ -27,7 +29,16 @@
   "author": "Nikolaev Constantin",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.21.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
     "@svgr/webpack": "^6.5.1",
     "@types/jest": "^29.4.0",
     "@types/node": "^18.11.18",
@@ -39,6 +50,7 @@
     "@types/webpack-dev-server": "^4.7.2",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
+    "babel-loader": "^8.3.0",
     "css-loader": "^6.7.3",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
@@ -51,6 +63,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-storybook": "^0.6.11",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
@@ -62,6 +75,7 @@
     "react-refresh": "^0.14.0",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
+    "storybook-addon-themes": "^6.1.0",
     "style-loader": "^3.3.1",
     "stylelint": "^15.1.0",
     "stylelint-config-clean-order": "^5.0.0",

@@ -20,11 +20,7 @@ export const Header: FC<IHeaderProps> = ({ className }) => {
     return (
         <div className={cn(s.Header, [className], {})}>
             <div className={s.leftSide}>
-                {theme === Theme.DARK ? (
-                    <LogoDark width={50} />
-                ) : (
-                    <LogoLight width={50} />
-                )}
+                {theme === Theme.DARK ? <LogoDark width={50} /> : <LogoLight width={50} />}
             </div>
             <div className={s.rightSide}>
                 <Navbar />

@@ -15,25 +15,13 @@ export const Navbar: FC<INavbarProps> = () => {
 
     return (
         <div className={cn(s.Navbar, [], {})}>
-            <AppLink
-                theme={AppLinkTheme.PRIMARY}
-                className={s.navItem}
-                to={`/`}
-            >
+            <AppLink theme={AppLinkTheme.PRIMARY} className={s.navItem} to={`/`}>
                 {t('Главная')}
             </AppLink>
-            <AppLink
-                theme={AppLinkTheme.PRIMARY}
-                className={s.navItem}
-                to={`/about`}
-            >
+            <AppLink theme={AppLinkTheme.PRIMARY} className={s.navItem} to={`/about`}>
                 {t('О нас')}
             </AppLink>
-            <AppLink
-                theme={AppLinkTheme.PRIMARY}
-                className={s.navItem}
-                to={`/bomb`}
-            >
+            <AppLink theme={AppLinkTheme.PRIMARY} className={s.navItem} to={`/bomb`}>
                 {t('Бомба')}
             </AppLink>
         </div>

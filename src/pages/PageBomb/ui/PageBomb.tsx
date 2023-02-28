@@ -40,9 +40,7 @@ export const PageBomb: FC<IPageBombProps> = ({ className }) => {
         <div className={cn(s.PageBoomb, [className], {})}>
             <h1>{t('Страница для тестирования Error Boundary')}</h1>
             <input
-                placeholder={t(
-                    'Введи значение bomb для того, чтобы поймать ошибку!'
-                )}
+                placeholder={t('Введи значение bomb для того, чтобы поймать ошибку!')}
                 value={value}
                 onChange={(e) => {
                     setValue(e.target.value)

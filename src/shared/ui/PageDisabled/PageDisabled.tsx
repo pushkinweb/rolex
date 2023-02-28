@@ -9,9 +9,6 @@ interface IPageDisabledProps {
     children?: ReactNode
 }
 
-export const PageDisabled: FC<IPageDisabledProps> = ({
-    className,
-    children
-}) => {
+export const PageDisabled: FC<IPageDisabledProps> = ({ className, children }) => {
     return <div className={cn(s.PageDisabled, [className], {})}>{children}</div>
 }
